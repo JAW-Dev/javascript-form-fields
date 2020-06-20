@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Demo</title>
+	<style>
+		body {
+			background: #222222;
+			color: #FFFFFF;
+		}
+		label {
+			display: block;
+		}
+		.checkbox label,
+		.color label,
+		.radio label {
+			display: inline;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="fields"></div>
+
+</body>
+<script src="./../dist/index.js"></script>
+<script>
+	const args = [
+	{
+		field: 'checkbox',
+		wrapper: 'p',
+		wrapperAttrs: 'class="checkbox"',
+		attrs: {
+			id: 'test-checkbox'
+		},
+		label: {
+			for: 'test-checkbox',
+			text: 'Test checkbox'
+		}
+	},
+	{
+		field: 'color',
+		wrapper: 'p',
+		wrapperAttrs: 'class="color"',
+		label: {
+			text: 'Test color'
+		}
+	},
+	{
+		field: 'date',
+		wrapper: 'p',
+		wrapperAttrs: 'class="date"',
+		label: {
+			text: 'Test date'
+		}
+	},
+	{
+		field: 'email',
+		wrapper: 'p',
+		wrapperAttrs: 'class="email"',
+		label: {
+			text: 'Test email'
+		}
+	},
+	{
+		field: 'file',
+		wrapper: 'p',
+		wrapperAttrs: 'class="file"',
+		label: {
+			text: 'Test file'
+		}
+	},
+	{
+		field: 'hidden',
+		attrs: {
+			value: '1234'
+		},
+		label: {
+			text: 'Test hidden'
+		}
+	},
+	{
+		field: 'image',
+		wrapper: 'p',
+		wrapperAttrs: 'class="image"',
+		attrs: {
+			attributes: 'src="https://images.unsplash.com/photo-1558981420-87aa9dad1c89?ixlib=rb-1.2.1&w=100&q=80"'
+		}
+	},
+	{
+		field: 'number',
+		wrapper: 'p',
+		wrapperAttrs: 'class="number"',
+		label: {
+			text: 'Test number'
+		}
+	},
+	{
+		field: 'password',
+		wrapper: 'p',
+		wrapperAttrs: 'class="password"',
+		label: {
+			text: 'Test Password'
+		}
+	},
+	{
+		field: 'radio',
+		wrapper: 'p',
+		wrapperAttrs: 'class="radio"',
+		label: {
+			text: 'Test radio'
+		}
+	},
+	{
+		field: 'range',
+		wrapper: 'p',
+		wrapperAttrs: 'class="range"',
+		label: {
+			text: 'Test range'
+		}
+	},
+	{
+		field: 'reset',
+		wrapper: 'p',
+		wrapperAttrs: 'class="reset"',
+		attrs: {
+			value: 'Reset Button'
+		}
+	},
+	{
+		field: 'search',
+		wrapper: 'p',
+		wrapperAttrs: 'class="search"',
+		label: {
+			text: 'Test search'
+		}
+	},
+	{
+		field: 'submit',
+		wrapper: 'p',
+		wrapperAttrs: 'class="submit"',
+		attrs: {
+			value: 'submit Button'
+		}
+	},
+	{
+		field: 'tel',
+		wrapper: 'p',
+		wrapperAttrs: 'class="tel"',
+		label: {
+			text: 'Test tel'
+		}
+	},
+	{
+		field: 'text',
+		wrapper: 'p',
+		wrapperAttrs: 'class="form-controll"',
+		attrs: {
+			id: 'test-text',
+			classes: 'test test-text',
+			name: 'test-text',
+			attributes: 'data-test="test-text" placeholder="Test Text"'
+		},
+		label: {
+			for: 'test-text',
+			text: 'Test Text'
+		}
+	},
+	{
+		field: 'textarea',
+		wrapper: 'p',
+		value: 'Textarea',
+		attrs: {
+			name: 'test-textarea'
+		},
+		label: {
+			text: 'Test Textarea'
+		}
+	},
+	{
+		field: 'time',
+		wrapper: 'p',
+		wrapperAttrs: 'class="time"',
+		label: {
+			text: 'Test time'
+		}
+	},
+	{
+		field: 'url',
+		wrapper: 'p',
+		wrapperAttrs: 'class="url"',
+		label: {
+			text: 'Test url'
+		}
+	}
+];
+
+nuefields('#fields', args);
+</script>
+</html>
